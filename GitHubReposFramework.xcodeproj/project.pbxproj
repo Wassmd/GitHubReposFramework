@@ -3,17 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525F566AC18B384ABC45A2FB /* Pods_GitHubReposFramework_GitHubReposFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59151DD69582B9450CC2C20F /* Pods_GitHubReposFramework_GitHubReposFrameworkTests.framework */; };
 		7428842724A67D0400836694 /* GitHubReposFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7428841D24A67D0400836694 /* GitHubReposFramework.framework */; };
-		7428842C24A67D0400836694 /* GitHubReposFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7428842B24A67D0400836694 /* GitHubReposFrameworkTests.m */; };
+		7428842C24A67D0400836694 /* GithubReposServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7428842B24A67D0400836694 /* GithubReposServiceTests.m */; };
 		7428842E24A67D0500836694 /* GitHubReposFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428842024A67D0400836694 /* GitHubReposFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7428843924A67E8B00836694 /* GithubReposService.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428843724A67E8B00836694 /* GithubReposService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7428843A24A67E8B00836694 /* GithubReposService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7428843824A67E8B00836694 /* GithubReposService.m */; };
-		7428844324A6808500836694 /* Loader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428844124A6808500836694 /* Loader.h */; };
+		7428844324A6808500836694 /* Loader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428844124A6808500836694 /* Loader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7428844424A6808500836694 /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7428844224A6808500836694 /* Loader.m */; };
+		97E59D4429E7242BCC2824A0 /* Pods_GitHubReposFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BC906BD156B64CC71D5DF /* Pods_GitHubReposFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,16 +29,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59151DD69582B9450CC2C20F /* Pods_GitHubReposFramework_GitHubReposFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubReposFramework_GitHubReposFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7428841D24A67D0400836694 /* GitHubReposFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitHubReposFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7428842024A67D0400836694 /* GitHubReposFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubReposFramework.h; sourceTree = "<group>"; };
 		7428842124A67D0400836694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7428842624A67D0400836694 /* GitHubReposFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubReposFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7428842B24A67D0400836694 /* GitHubReposFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubReposFrameworkTests.m; sourceTree = "<group>"; };
+		7428842B24A67D0400836694 /* GithubReposServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubReposServiceTests.m; sourceTree = "<group>"; };
 		7428842D24A67D0500836694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7428843724A67E8B00836694 /* GithubReposService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubReposService.h; sourceTree = "<group>"; };
 		7428843824A67E8B00836694 /* GithubReposService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubReposService.m; sourceTree = "<group>"; };
 		7428844124A6808500836694 /* Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
 		7428844224A6808500836694 /* Loader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
+		841BC906BD156B64CC71D5DF /* Pods_GitHubReposFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubReposFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A277A4A621D15CC71E6267B2 /* Pods-GitHubReposFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubReposFramework.debug.xcconfig"; path = "Target Support Files/Pods-GitHubReposFramework/Pods-GitHubReposFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		B18695C4307DF37FDB1095CF /* Pods-GitHubReposFramework-GitHubReposFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubReposFramework-GitHubReposFrameworkTests.release.xcconfig"; path = "Target Support Files/Pods-GitHubReposFramework-GitHubReposFrameworkTests/Pods-GitHubReposFramework-GitHubReposFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBEB4E9E3CBC85D2C0758F00 /* Pods-GitHubReposFramework-GitHubReposFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubReposFramework-GitHubReposFrameworkTests.debug.xcconfig"; path = "Target Support Files/Pods-GitHubReposFramework-GitHubReposFrameworkTests/Pods-GitHubReposFramework-GitHubReposFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E488B9B996B3396BB5F7891E /* Pods-GitHubReposFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubReposFramework.release.xcconfig"; path = "Target Support Files/Pods-GitHubReposFramework/Pods-GitHubReposFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E59D4429E7242BCC2824A0 /* Pods_GitHubReposFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				7428842724A67D0400836694 /* GitHubReposFramework.framework in Frameworks */,
+				525F566AC18B384ABC45A2FB /* Pods_GitHubReposFramework_GitHubReposFrameworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71EE20D9A2091D79F10649BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841BC906BD156B64CC71D5DF /* Pods_GitHubReposFramework.framework */,
+				59151DD69582B9450CC2C20F /* Pods_GitHubReposFramework_GitHubReposFrameworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7428841324A67D0400836694 = {
 			isa = PBXGroup;
 			children = (
 				7428841F24A67D0400836694 /* GitHubReposFramework */,
 				7428842A24A67D0400836694 /* GitHubReposFrameworkTests */,
 				7428841E24A67D0400836694 /* Products */,
+				F41003E3A893C4BD58090E5C /* Pods */,
+				71EE20D9A2091D79F10649BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +112,7 @@
 		7428842A24A67D0400836694 /* GitHubReposFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				7428842B24A67D0400836694 /* GitHubReposFrameworkTests.m */,
+				7428842B24A67D0400836694 /* GithubReposServiceTests.m */,
 				7428842D24A67D0500836694 /* Info.plist */,
 			);
 			path = GitHubReposFrameworkTests;
@@ -114,6 +135,17 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		F41003E3A893C4BD58090E5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A277A4A621D15CC71E6267B2 /* Pods-GitHubReposFramework.debug.xcconfig */,
+				E488B9B996B3396BB5F7891E /* Pods-GitHubReposFramework.release.xcconfig */,
+				DBEB4E9E3CBC85D2C0758F00 /* Pods-GitHubReposFramework-GitHubReposFrameworkTests.debug.xcconfig */,
+				B18695C4307DF37FDB1095CF /* Pods-GitHubReposFramework-GitHubReposFrameworkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -134,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7428843124A67D0500836694 /* Build configuration list for PBXNativeTarget "GitHubReposFramework" */;
 			buildPhases = (
+				868266C64894069EC9C027CD /* [CP] Check Pods Manifest.lock */,
 				7428841824A67D0400836694 /* Headers */,
 				7428841924A67D0400836694 /* Sources */,
 				7428841A24A67D0400836694 /* Frameworks */,
@@ -152,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7428843424A67D0500836694 /* Build configuration list for PBXNativeTarget "GitHubReposFrameworkTests" */;
 			buildPhases = (
+				959056282C45FF1427DDEC8F /* [CP] Check Pods Manifest.lock */,
 				7428842224A67D0400836694 /* Sources */,
 				7428842324A67D0400836694 /* Frameworks */,
 				7428842424A67D0400836694 /* Resources */,
+				E05BE9D83D110FBDB23129DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +254,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		868266C64894069EC9C027CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitHubReposFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959056282C45FF1427DDEC8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitHubReposFramework-GitHubReposFrameworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05BE9D83D110FBDB23129DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubReposFramework-GitHubReposFrameworkTests/Pods-GitHubReposFramework-GitHubReposFrameworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubReposFramework-GitHubReposFrameworkTests/Pods-GitHubReposFramework-GitHubReposFrameworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitHubReposFramework-GitHubReposFrameworkTests/Pods-GitHubReposFramework-GitHubReposFrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7428841924A67D0400836694 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -233,7 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7428842C24A67D0400836694 /* GitHubReposFrameworkTests.m in Sources */,
+				7428842C24A67D0400836694 /* GithubReposServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +465,7 @@
 		};
 		7428843224A67D0500836694 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A277A4A621D15CC71E6267B2 /* Pods-GitHubReposFramework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -390,6 +490,7 @@
 		};
 		7428843324A67D0500836694 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E488B9B996B3396BB5F7891E /* Pods-GitHubReposFramework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -414,6 +515,7 @@
 		};
 		7428843524A67D0500836694 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEB4E9E3CBC85D2C0758F00 /* Pods-GitHubReposFramework-GitHubReposFrameworkTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitHubReposFrameworkTests/Info.plist;
@@ -430,6 +532,7 @@
 		};
 		7428843624A67D0500836694 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B18695C4307DF37FDB1095CF /* Pods-GitHubReposFramework-GitHubReposFrameworkTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitHubReposFrameworkTests/Info.plist;

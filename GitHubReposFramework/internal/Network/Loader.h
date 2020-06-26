@@ -2,6 +2,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString* const endPoint;
+
 @interface Loader : NSObject
 
 - (void)getRequest:(NSString*)urlString

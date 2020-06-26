@@ -1,4 +1,6 @@
 #import "GithubReposService.h"
+#import "AFNetworking.h"
+#import "Loader.h"
 
 @implementation GithubReposService
 
