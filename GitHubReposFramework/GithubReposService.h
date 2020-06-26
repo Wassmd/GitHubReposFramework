@@ -5,8 +5,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GithubReposService : NSObject
 
-@property (nonatomic, readonly) Loader *loader;
-
 - (instancetype)initWithLoader:(Loader*)loader;
 
  - (void)getGithubReposWithUsername:(NSString*)userName

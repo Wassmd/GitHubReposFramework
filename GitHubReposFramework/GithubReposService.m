@@ -2,7 +2,9 @@
 #import "AFNetworking.h"
 #import "Loader.h"
 
-@implementation GithubReposService
+@implementation GithubReposService {
+    Loader *_loader;
+}
 
 - (instancetype)initWithLoader:(Loader*)loader {
     _loader = loader;
@@ -11,7 +13,11 @@
 }
 
 - (instancetype)init {
-    _loader = [[Loader alloc] init];
+    self = [super init];
+
+    if (self) {
+      _loader = [[Loader alloc] init];
+    }
 
     return self;
 }
