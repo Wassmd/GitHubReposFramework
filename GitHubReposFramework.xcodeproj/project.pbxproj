@@ -10,6 +10,10 @@
 		7428842724A67D0400836694 /* GitHubReposFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7428841D24A67D0400836694 /* GitHubReposFramework.framework */; };
 		7428842C24A67D0400836694 /* GitHubReposFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7428842B24A67D0400836694 /* GitHubReposFrameworkTests.m */; };
 		7428842E24A67D0500836694 /* GitHubReposFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428842024A67D0400836694 /* GitHubReposFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7428843924A67E8B00836694 /* GithubReposService.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428843724A67E8B00836694 /* GithubReposService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7428843A24A67E8B00836694 /* GithubReposService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7428843824A67E8B00836694 /* GithubReposService.m */; };
+		7428844324A6808500836694 /* Loader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428844124A6808500836694 /* Loader.h */; };
+		7428844424A6808500836694 /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7428844224A6808500836694 /* Loader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		7428842624A67D0400836694 /* GitHubReposFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubReposFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7428842B24A67D0400836694 /* GitHubReposFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubReposFrameworkTests.m; sourceTree = "<group>"; };
 		7428842D24A67D0500836694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7428843724A67E8B00836694 /* GithubReposService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubReposService.h; sourceTree = "<group>"; };
+		7428843824A67E8B00836694 /* GithubReposService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubReposService.m; sourceTree = "<group>"; };
+		7428844124A6808500836694 /* Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+		7428844224A6808500836694 /* Loader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,9 @@
 			children = (
 				7428842024A67D0400836694 /* GitHubReposFramework.h */,
 				7428842124A67D0400836694 /* Info.plist */,
+				7428843724A67E8B00836694 /* GithubReposService.h */,
+				7428843824A67E8B00836694 /* GithubReposService.m */,
+				7428843B24A67F6700836694 /* internal */,
 			);
 			path = GitHubReposFramework;
 			sourceTree = "<group>";
@@ -86,6 +97,23 @@
 			path = GitHubReposFrameworkTests;
 			sourceTree = "<group>";
 		};
+		7428843B24A67F6700836694 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				7428843C24A67F7600836694 /* Network */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		7428843C24A67F7600836694 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7428844124A6808500836694 /* Loader.h */,
+				7428844224A6808500836694 /* Loader.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +121,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7428844324A6808500836694 /* Loader.h in Headers */,
 				7428842E24A67D0500836694 /* GitHubReposFramework.h in Headers */,
+				7428843924A67E8B00836694 /* GithubReposService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7428844424A6808500836694 /* Loader.m in Sources */,
+				7428843A24A67E8B00836694 /* GithubReposService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
