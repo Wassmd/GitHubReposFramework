@@ -1,6 +1,7 @@
 #import "GithubReposService.h"
 #import "AFNetworking.h"
 #import "Loader.h"
+#import "Repository.h"
 
 @implementation GithubReposService {
     Loader *_loader;
@@ -23,14 +24,23 @@
 }
 
 - (void)getGithubReposWithUsername:(NSString*)userName
-                      SuccessBlock:(void(^)(NSDictionary *repos))successBlock
+                      SuccessBlock:(void(^)(NSArray *repositories))successBlock
                         errorBlock:(void(^)(NSError *error))errorBlock {
 
     NSString *urlString = [[NSString alloc] initWithFormat:endPoint, userName];
 
     [_loader getRequest:urlString SuccessBlock:^(NSDictionary *repos) {
-        NSLog(@"responseString:%@",repos);
-        successBlock(repos);
+        NSMutableArray *repositories = [[NSMutableArray alloc] init];
+
+         for (NSDictionary *dict in repos) {
+              Repository *repository = [[Repository alloc] initWithDict:dict];
+
+             [repositories addObject:repository];
+         }
+
+        NSLog(@"Wasim repos:%@",repositories);
+        successBlock(repositories);
+
     } errorBlock:^(NSError *error) {
         NSLog(@"Wasim failure: %@", error);
         errorBlock(error);

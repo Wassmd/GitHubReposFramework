@@ -22,7 +22,7 @@
     Loader *loader = [[Loader alloc] init];
 
     GithubReposService *service = [[GithubReposService alloc] initWithLoader: loader];
-    [service getGithubReposWithUsername:@"wassmd" SuccessBlock:^(NSDictionary * _Nonnull repos) {
+    [service getGithubReposWithUsername:@"wassmd" SuccessBlock:^(NSArray * _Nonnull repositories) {
         [expectation fulfill];
     } errorBlock:^(NSError * _Nonnull error) {
         [expectation fulfill];

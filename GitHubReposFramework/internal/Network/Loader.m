@@ -11,13 +11,10 @@ NSString* const endPoint = @"https://api.github.com/users/%@/repos";
 
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:urlString parameters: NULL headers:NULL progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"Wasim inside download Progress");
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *reposDict = (NSDictionary *)responseObject;
-        NSLog(@"responseString:%@",reposDict);
         successBlock(reposDict);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"Wasim failure: %@", error);
         errorBlock(error);
     }];
 }

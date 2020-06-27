@@ -8,7 +8,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithLoader:(Loader*)loader;
 
  - (void)getGithubReposWithUsername:(NSString*)userName
-                      SuccessBlock:(void(^)(NSDictionary *repos))successBlock
+                      SuccessBlock:(void(^)(NSArray *repositories))successBlock
                         errorBlock:(void(^)(NSError *error))errorBlock;
 @end
 
