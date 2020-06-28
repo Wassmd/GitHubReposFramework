@@ -23,8 +23,10 @@
 
     GithubReposService *service = [[GithubReposService alloc] initWithLoader: loader];
     [service getGithubReposWithUsername:@"wassmd" SuccessBlock:^(NSArray * _Nonnull repositories) {
+        XCTAssertNotNil(repositories);
         [expectation fulfill];
     } errorBlock:^(NSError * _Nonnull error) {
+        XCTAssertNotNil(error);
         [expectation fulfill];
     }];
 
