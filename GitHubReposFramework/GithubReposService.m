@@ -38,11 +38,9 @@
              [repositories addObject:repository];
          }
 
-        NSLog(@"Wasim repos:%@",repositories);
         successBlock(repositories);
 
     } errorBlock:^(NSError *error) {
-        NSLog(@"Wasim failure: %@", error);
         errorBlock(error);
     }];
 
